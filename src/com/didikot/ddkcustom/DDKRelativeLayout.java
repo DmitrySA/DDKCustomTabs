@@ -42,15 +42,9 @@ public final class DDKRelativeLayout extends RelativeLayout
 	protected void onDraw( Canvas canvas )
 	{
 		super.onDraw( canvas );
-
-		canvas.drawColor( 0xFFC5CCD4 );
-		
 		this.getDrawingRect( mRect );
-		
 		for( int i = 0; i < mRect.right; i += 7 )
-		{
 			canvas.drawRect( mRect.left + i, mRect.top, mRect.left + i + 2, mRect.bottom, mPaint );
-		}
 
 	}
 }
